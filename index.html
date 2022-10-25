@@ -4,50 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Página em html</title>
 </head>
 <body>
-    <h1>Titulo com um tamanho grande</h1>
-    <hr />  <!--pular linha-->
-    <p>Esse tag iniciará um parágrafo</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Essa tag colocará 
-    uma palavra em negrito </b>Est itaque quis libero distinctio deleniti nesciunt 
-    neque placeat delectus! Porro velit 
-    alias voluptatum repudiandae tenetur assumenda facilis tempora iure eum maxime.</p>
-    <br>
-    <br> <!--essa tag pulará linhas-->
-    <p>A tag STRONG, diferente da tag B, ela dá uma ênfase naquela palavra
-        para que ela seja lida com mais <strong>força</strong>
-    </p>
-    <!--TAG font muda cor, estilo e fonte-->
-    <font face="Arial">Arial </font> <br />
-    <font face="Courier">Courier </font> <br />
-    <font face="Georgia">Georgia </font> <br />
-    <font color="pink"> pink </font>
-    <font color="red"> red </font>
-    <font color="blue"> blue </font>
-    <br>
+    <div class="wrapper">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>Página Principal</li>
+                  <a href="./sobre.html" > <li>Sobre a clínica</li></a>
+                  <a href="./horario.html"><li>Horário de atendimento</li></a>
+                  <a href="./contato.html"> <li>Contato</li></a>
+                </ul>
+            </nav>
+            <ul>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
 
-    <font size="12">Tamanho desta fonte: 12</font> <br />
-    <font size="20">Tamanho desta fonte: 20</font> <br />
+        <div class="main">
+            <div class="header">
+                 
+               <img src="./imagem.jpg" width=1000px>
+            </div>
+    
+            <div class="content">
+                Descrição sobre a clínica:
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi provident aut, quae quis
+               delectus ad facilis! Suscipit aliquid aliquam recusandae. 
+              Cum aliquam excepturi maxime explicabo iure, voluptate eveniet? Est, iure?</p>
+            
+            </div>
+    
+            <div class="footer">
+            <h2>Entre em contato conosoco:</h2> 
+             <ul id="footer">
+                    <li>(xx) (xxxx-xxxx)</li>
+                    <li>email: clinica@gmail.com</li>
 
-    <!--A tag abbr é para abreviar algumas palavras-->
-    <p>Biden é presidente dos <abbr title="Estados Unidos da América">EUA</abbr></p>
-    <!--A tag del serve para rabiscar um texto-->
-    <p><del>Esse texto será deletado</del></p>
-
-    <ul>Lista não ordenada
-        <li>Nome</li>
-        <li>Endereço</li>
-        <li>Telefone</li>
-        <li>Email</li>
-    </ul>
-    <oL> Lista ordenada
-        <li>Suco</li>
-        <li>Bolo</li>
-        <li>Bolacha</li>
-        <li>Salgado</li>
-    </oL>
-
+             </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
